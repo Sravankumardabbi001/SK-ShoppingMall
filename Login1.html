@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+<head>
+<title>
+html basic
+</title>
+<script type="text/javascript">
+function validate(){
+if(document.myform.gmail.value==''){
+alert("please provide valid one");
+document.myform.gmail.focus();
+return false;
+}
+function valid(){
+var emailid=document.myform.gmail.value;
+atpos=emailid.indexOf("@");
+atdos=emailid.lstIndexOf(".");
+if(atpos<1|| (atdos-atpos)<2){
+alert("Plese enter correct mail");
+document.myform.gmail.focus();
+return false;
+}
+return (true);
+
+}
+</script>
+<style>
+table{
+color:green;
+background-image:url("s.jpeg");
+}
+body{
+margin-top:200px;
+}
+</style>
+</head>
+<body bgcolor='skyblue'>
+<form action="Success.html" name="myform" onsubmit="return(validate());">
+<table border='0' align="center">
+<tr>
+<td>Email</td>
+<td><input type="email" name="gmail"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type='password' name='pswd'></td>
+</tr>
+<tr>
+<td colspan="2"><center><input type="submit" value="submit"></center></td>
+
+</tr>
+<tr>
+<td>
+<a href="Registration.html">Create new account</a>
+</td>
+</tr>
+
+
+</table>
+</form>
+
+</body>
+</html>
