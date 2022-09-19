@@ -1,0 +1,17 @@
+a:hover{
+	color:red;
+	font-size:x-large;
+}
+a{
+	color:green;
+}
+a:active{
+	color:lightgrey;
+}
+a:visited{
+	color:black;
+}
+
+h1{
+	padding:50px;
+}
